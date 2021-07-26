@@ -9,25 +9,26 @@
   height: 100vh;
   width: 100vw;
   background: linear-gradient(to bottom, #9e53e4, blueviolet, #9e53e4);
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .cont {
-  height: 65vh;
-  width: 46vh;
+  height: 430px;
+  width: fit-content;
   display: block;
-  padding: 2vh;
+  padding: 16px;
   background: #eee;
   border-radius: 12.5px;
   box-shadow: 0 0 128px 0 rgba(77, 77, 77, 0.6),
     0 32px 64px -48px rgba(77, 77, 77, 0.6);
+  overflow: hidden;
 }
 
 #numContain {
-  height: 42vh;
+  height: 300px;
   position: relative;
-  width: 42vh;
+  width: 260px;
   border-radius: 6.25px;
   background: #fff;
   border: 2px solid black;
@@ -36,20 +37,18 @@
 #contain {
   display: none;
   font-family: langar;
-  margin: 1vh;
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 4vh;
+  font-size: 32px;
 }
 
 #btn {
   display: block;
-  height: 5vh;
-  width: 38vh;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 38px;
+  width: 90%;
+  margin:12px auto auto auto;
   outline: none;
   background: linear-gradient(to left, #9e53e4, blueviolet);
   border: none;
@@ -165,13 +164,15 @@
 }
 
 #scoreBox {
-  height: 10vh;
-  width: 10vh;
+  height: 80px;
+  width: 80px;
+  padding: 6px;
+  margin: 8px auto;
   border-radius: 12px;
   box-shadow: 0 0 128px 0 rgba(77, 77, 77, 0.6),
     0 32px 64px -48px rgba(77, 77, 77, 0.6);
   font-family: langar;
-  font-size: 6vh;
+  font-size: 40px;
   display: grid;
   place-items: center;
   background: #eee;
@@ -190,25 +191,26 @@
   display: none;
   position: absolute;
   background: #fff;
-  height: 4vh;
-  width: 4vw;
+  padding: 4px;
+  height: fit-content;
+  min-width: 60px;
+  width: fit-content;
   text-align: center;
   overflow: hidden;
-  top: 80%;
-  right: -80%;
+  top: 30%;
+  right: 0%;
   animation: upAnim 0.8s linear;
-  border-radius: 3vh;
-  padding-top: 0.5vh;
+  border-radius: 25px;
   box-shadow: 0 0 128px 0 rgba(77, 77, 77, 0.6),
     0 32px 64px -48px rgba(77, 77, 77, 0.6);
 }
 
 @keyframes upAnim {
-  from {
+  0% {
     top: 80%;
     opacity: 1;
   }
-  to {
+  100% {
     top: 0%;
     opacity: 0;
     display: none;

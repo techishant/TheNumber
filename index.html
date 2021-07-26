@@ -24,21 +24,23 @@
           <button id="reloadBtn" onclick="location.reload()">restart</button>
         </div>
       </div>
-      <div class="scoreDiv">
-        <div id="scoreBox">00</div>
-        <span id="hover">+1</span>
-      </div>
-      <div class="cont">
-        <div id="numContain">
-          <p id="contain"></p>
+      <div class="main">
+        <div class="scoreDiv">
+          <div id="scoreBox">00</div>
+          <span id="hover">+1</span>
         </div>
-        <div class="inpCont">
+        <div class="cont">
+          <div id="numContain">
+            <p id="contain">87</p>
+          </div>
+          <div class="inpCont">
             <div class="inpuBox">
-                <input id="dataInp" type="number" />
-                <button id="dataInpBtn" onclick="check()">&check;</button>
+              <input id="dataInp" type="number" />
+              <button id="dataInpBtn" onclick="check()">&check;</button>
             </div>
+          </div>
+          <button id="btn" onclick="dis()">NEXT</button>
         </div>
-        <button id="btn" onclick="dis()">NEXT</button>
       </div>
     </div>
     <script src="js/script.js"></script>
