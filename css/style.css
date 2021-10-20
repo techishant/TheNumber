@@ -119,7 +119,7 @@
 }
 
 #losePage .wrapper {
-  height: 70vh;
+  height: fit-content;
   position: relative;
   width: 70vw;
   border-radius: 25px;
@@ -156,9 +156,8 @@
   background: linear-gradient(to right, #9e53e4, blueviolet);
 }
 
-#quote {
+#quote, #score, #scoreDis {
   display: block;
-  font-size: auto;
   font-family: langar;
   text-align: center;
 }
@@ -215,4 +214,13 @@
     opacity: 0;
     display: none;
   }
+}
+
+#score{
+  display: inline;
+}
+
+#quote,#score, #scoreDis{
+  font-weight: 600;
+  font-size: 100%;
 }
